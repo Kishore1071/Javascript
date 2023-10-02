@@ -6,10 +6,10 @@ let c = 234e5;
 
 // Floating Precision
 
-let d = 0.14
+let d = 0.146
 let e = 0.25
 
-let f = (d * 100 + e * 100) / 100
+let f = (d * 1000 + e * 1000) / 1000
 
 console.log(f)
 

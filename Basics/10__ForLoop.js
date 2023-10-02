@@ -9,8 +9,29 @@ for(let i = 0; i <= 3; i++) {
 
 let numbers = [1, 2, 3, 4]
 
+let sum = 0
+
 for(let x of numbers) {
-    console.log(x)
+
+    sum = sum + x
+
+    if (x === 2) {
+
+        console.log(x)
+        break
+    }
+}
+
+
+
+for(let x of numbers) {
+
+    if (x === 2) {
+        continue
+    }
+    else {
+        console.log(x)
+    }
 }
 
 

@@ -1,11 +1,11 @@
-let age = 10;
+let age = 5;
 
 switch (age) {
     case 5:
-        console.log("n is 5")
+        console.log("age is number 5")
         break;
-    case 6:
-        console.log("n is 5")
+    case "Data":
+        console.log("age is a string")
         break;
     default:
         console.log("n doesn't have the required value")

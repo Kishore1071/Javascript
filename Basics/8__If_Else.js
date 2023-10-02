@@ -1,8 +1,10 @@
 // Simple if statement
 
 let a = 10;
+let b = 15;
 
 if (a === 10) {
+    
     console.log("a is 10")
 }
 
@@ -14,6 +16,7 @@ if (a === 10) {
 else {
     console.log("a doesn't have the expected value")
 }
+
 
 // if, else if and else
 

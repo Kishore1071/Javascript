@@ -45,13 +45,14 @@ console.log(the_symbol);
 
 const person_data = {
     "name" : "Kishore",
-    "age": 25
+    "age": 25,
+    "is_admin": true
 }
 
 
 // Array
 
-const shopping_list = ["Milk", "Ice Cream"]
+const shopping_list = ["Milk", "Ice Cream", 56,67, true]
 
 
 // Date
