@@ -20,3 +20,4 @@ console.log(f)
 // Infinity type of number
 
     // Anything divided by 0
+

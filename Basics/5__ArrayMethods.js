@@ -7,8 +7,6 @@ number[0] // gets the first value of the array
 
 number.push(4) // add as a last values of the array
 
-number[number.length] = 5 // add as a last values of the array
-
 // PROPERTIES & METHODS:-
 
 number.length  //total values in array

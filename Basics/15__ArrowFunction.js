@@ -1,4 +1,4 @@
-let SingleParameter = a => console.log(a + 10)
+const SingleParameter = (a) => console.log(a + 10)
 
 let SmallFunction = () => console.log("Small function")
 

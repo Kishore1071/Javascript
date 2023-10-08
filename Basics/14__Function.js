@@ -13,6 +13,8 @@ ConsoleData();
 
 function ReturnData() {
 
+    
+
     let a = 10
     let b = 15
     let c = a + b
@@ -34,10 +36,7 @@ Addition(10, 5) // arguments
 // Function can have local variable
 
 function Double(number) {
-    let double = 2;
-
-    console.log(double)
-    return number * double
+    return number * 2
 }
 
 Double(10)

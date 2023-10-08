@@ -8,7 +8,7 @@ const person_details = {
     "date_of_birth": "1998-03-24",
     "designation": "Software Developer",
     "is_manager": false,
-    "fullname": function() {
+    "fullname": function () {
         return `${this.first_name} ${this.last_name}`
     }
 }

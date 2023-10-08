@@ -52,7 +52,7 @@ const person_data = {
 
 // Array
 
-const shopping_list = ["Milk", "Ice Cream", 56,67, true]
+const shopping_list = ["Milk", "Ice Cream", 56, 67, true, 78.876]
 
 
 // Date

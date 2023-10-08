@@ -1,6 +1,7 @@
 // Variables are the storage containers for values
 
 let person_name = "Kishore";
+person_name = "Kishore"
 console.log(person_name)
 var age = 25;
 const designation = "Software developer";
