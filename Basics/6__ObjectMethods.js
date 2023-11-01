@@ -23,6 +23,7 @@ person_details['first_name']
 
 person_details['marital_status'] = false
 
+
 `Updating Properties`
 
 person_details['first_name'] = "Kishore M"
@@ -31,6 +32,7 @@ person_details['first_name'] = "Kishore M"
 `Deleting Existing Properties`
 
 delete person_details.age
+
 
 
 `Accessing Existing Methods`

@@ -1,11 +1,11 @@
 // Array is used to store multiple values in a single variable
 // Arrays are sequence datatypes and can be accessed with index values, index values starts from 0
 
-const number = ["g", "q", 3]
+const number = ["g", "q", 2]
 
 number[0] // gets the first value of the array
 
-number.push(4) // add as a last values of the array
+number.push("w") // add as a last values of the array
 
 // PROPERTIES & METHODS:-
 
@@ -19,7 +19,7 @@ number.unshift(6)  // to add a value as the first value of the array
 
 number[0] = "Car"  // we can change the value of an index
 
-number.indexOf(2)  // to find the index of a value
+number.indexOf("q")  // to find the index of a value
 
 Array.isArray(number) // Type of array
 
@@ -35,7 +35,7 @@ let players = ['Rohit', "Virat", "Rahul", "Sehwag"]
 
 players.splice(2, 0, "Dhoni", "Sachin") // to add items based on index
 
-players.splice(2, 1) // to remove items based on index
+players.splice(2, 2) // to remove items based on index
 
 const fruits_list = ["Banana", "Orange", "Lemon", "Apple", "Mango"]
 

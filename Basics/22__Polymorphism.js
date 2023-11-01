@@ -1,3 +1,31 @@
+// Polymorphism means many forms. If a set of code can behave differently for different types of input then it is known as polymorphism. Technically Polymorphism is the ability of objects to respond to the same method or property differently based on their own properties or behavior.
+
+// A simple example are console.log, typeof
+
+
+// Example with class
+
+class Bird {
+    speak() {
+        console.log("Bird sings.");
+    }
+}
+
+class Cat {
+    speak() {
+        console.log("Cat meows.");
+    }
+}
+
+const pets = [new Bird(), new Cat()];
+
+for (const pet of pets) {
+    pet.speak();
+}
+
+
+// Examples with function
+
 function Addittion(...args) {
 
     let number_list = []
@@ -32,7 +60,7 @@ function Addittion(...args) {
 
         if (sum === 0){
 
-            return "This function requires minimum one number or character as parameter"
+            return "This function requires minimum one number or character as arguments"
         }
 
         else {

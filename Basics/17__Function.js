@@ -1,4 +1,4 @@
-// Functions are used reduce code repeataion and make the codes in to single callable functions
+// a function is a reusable block of code that performs a specific task or set of tasks. Functions are used reduce code repeataion and make the codes in to single callable functions
 
 `Basic Function`
 
@@ -12,9 +12,7 @@ ConsoleData();
 `Function with Return`
 
 function ReturnData() {
-
     
-
     let a = 10
     let b = 15
     let c = a + b

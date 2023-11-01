@@ -5,7 +5,7 @@ let user_name = 'kishore' // Single Quotes
 
 // Escape Character \ : To include predefined symbols
 
-let text = 'This is a \'heading\' text'
+let text = "This is a \"heading\" text"
 
 
 // PROPERTIES & METHODS:-
