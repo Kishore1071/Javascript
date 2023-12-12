@@ -6,7 +6,7 @@ function GetData() {
 
     let http_request = new XMLHttpRequest();
 
-    http_request.open('GET', 'http://127.0.0.1:8000/api/product/', true)
+    http_request.open('GET', 'http://127.0.0.1:8000/test/post/', true)
 
     http_request.send();
 
@@ -23,6 +23,10 @@ function GetData() {
 
         else if (http_request.status === 404){
             console.log("page not found");
+        }
+
+        else if (http_request.status === 500){
+            console.log("Server Error");
         }
     }
 
@@ -44,7 +48,7 @@ function RenderData(customer_data) {
 
         `
         <td>${customer.id}</td>
-        <td>${customer.name}</td>
+        <td>${customer.customer_name}</td>
         <td>${customer.username}</td>
         <td>${customer.age}</td>
         <td><button id=${customer.id} class="btn btn-info text-white"  onclick="Edit(this)">Edit</button></td>
@@ -60,15 +64,17 @@ function PostData() {
 
     table.innerHTML = ''
 
-    formData = {}
-
-    formData['name'] = document.getElementById('customer_name').value 
-    formData['username'] = document.getElementById('username').value 
-    formData['age'] = document.getElementById('age').value 
+    formData = {
+        'name': document.getElementById('customer_name').value,
+        'username': document.getElementById('username').value,
+        'age':document.getElementById('age').value
+    }
     
+    console.log(formData);
+
     let http_request = new XMLHttpRequest();
 
-    http_request.open('POST', 'http://127.0.0.1:1000/basic/test/', true)
+    http_request.open('POST', 'http://127.0.0.1:8000/test/post/', true)
 
     http_request.setRequestHeader('Content-Type', 'application/json')
 
@@ -80,11 +86,13 @@ function PostData() {
 
             let customer_data = JSON.parse(http_request.responseText)
 
+            console.log(customer_data);
+
             let customer_form = document.getElementById('customer_form')
 
             customer_form.reset()
             
-            RenderData(customer_data['data'])
+            RenderData(customer_data)
         }
     }
 }
@@ -129,7 +137,7 @@ function UpdateData() {
 
     let http_request = new XMLHttpRequest();
 
-    http_request.open('PUT', `http://127.0.0.1:1000/basic/test/${id_to_update}/`, true)
+    http_request.open('PATCH', `http://127.0.0.1:8000/test/post/${id_to_update}/`, true)
 
     http_request.setRequestHeader('Content-Type', 'application/json')
 
@@ -145,7 +153,7 @@ function UpdateData() {
 
             customer_form.reset()
             
-            RenderData(customer_data['data'])
+            RenderData(customer_data)
         }
     }
 }
@@ -166,7 +174,7 @@ function Delete(x) {
 
     let http_request = new XMLHttpRequest();
 
-    http_request.open('Delete', `http://127.0.0.1:1000/basic/test/${id}/`, true)
+    http_request.open('Delete', `http://127.0.0.1:8000/test/post/${id}/`, true)
 
     http_request.send()
 
@@ -184,7 +192,7 @@ function Delete(x) {
 
             table_body.innerHTML = ''
             
-            RenderData(customer_data['data'])
+            RenderData(customer_data)
         }
     }
 }
