@@ -11,8 +11,8 @@ while (condition) {
 let count = 0;
 
 while (count < 5) {
-    console.log(`Count: ${count}`);
-    count++; // Increment the count to eventually exit the loop
+    console.log(count)
+    count = count + 1; // Increment the count to eventually exit the loop
 }
 
 

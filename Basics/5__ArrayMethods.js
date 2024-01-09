@@ -21,7 +21,7 @@ number[0] = "Car"  // we can change the value of an index
 
 number.indexOf("q")  // to find the index of a value
 
-Array.isArray(number) // Type of array
+ Array.isArray(number)// Type of array
 
 const fruits = ['Apple', 'Orange']
 
