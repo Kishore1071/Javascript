@@ -6,7 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="LogData()">Click</button>
+    <form action="">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        <input type="button" value="Submit" onclick="LogData()">
+    </form>
+    <p id="data"></p>
+    <button onclick="ShowData()">Show Data</button>
     <script src="test.js"></script>
 </body>
 </html>
