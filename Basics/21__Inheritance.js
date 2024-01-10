@@ -39,4 +39,4 @@ class ProfessionalDetails extends PersonData{
 
 let person_details = new ProfessionalDetails("Kishore", 25, 60, "Software Developer", 2020)
 
-console.log(person_details.getProfile());
+console.log(person_details);
