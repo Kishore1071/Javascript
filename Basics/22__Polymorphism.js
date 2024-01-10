@@ -25,73 +25,25 @@ for (const pet of pets) {
 
 
 // Examples with function
+function calculateArea(shape) {
 
-function Addittion(...args) {
+    if (shape.type === 'circle') {
 
-    let number_list = []
-
-    let string_list = []
-
-    let string_data = false
-
-    for (let x of args) {
-
-        if (typeof(x) == "string") {
-
-            string_data = true
-        
-            string_list.push(x)
-        }
-
-        else {
-
-            number_list.push(x)
-        }
+        return Math.PI * Math.pow(shape.radius, 2);
     }
+    else if (shape.type === 'rectangle') {
 
-    let sum = 0
-
-    for (let y of number_list){
-
-        sum = sum + y
+        return shape.length * shape.width;
     }
+    else {
 
-    if (string_data === false){
-
-        if (sum === 0){
-
-            return "This function requires minimum one number or character as arguments"
-        }
-
-        else {
-            
-            return sum
-        }
-
-    }
-    
-    else if (string_data === true){
-
-        sentance = ""
-
-        for (let word of string_list){
-
-            sentance = sentance + word + " "
-        }
-
-        if (sum === 0) {
-
-            return sentance
-        }
-        
-        else{
-
-            return `${sum}, ${sentance}`
-        }
-
+        console.log('Unsupported shape type');
     }
 }
 
-result = Addittion()
 
-console.log(result);
+const circle = { type: 'circle', radius: 5 };
+const rectangle = { type: 'rectangle', length: 4, width: 6 };
+
+console.log('Circle Area:', calculateArea(circle));
+console.log('Rectangle Area:', calculateArea(rectangle));
