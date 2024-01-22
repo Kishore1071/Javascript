@@ -51,3 +51,15 @@ while (count < 20) {
 
     count = count + 1
 }
+
+// EMI
+
+let loan_amount = 100000
+let interest_rate = 9
+let tenure = 36
+
+r = (interest_rate/100) / 12
+
+emi = (loan_amount * r * ((1 + r) ** tenure)) / (((1 + r) ** tenure) - 1)
+
+console.log(emi, "emi");

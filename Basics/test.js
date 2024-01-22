@@ -1,10 +1,10 @@
-// const LogData = () => {
-//     const username = document.getElementById('username').value
-//     // console.log(username)
-//     window.location.href = 'second.html'
-//
 
-const ShowData = () => {
+let x = 10
+try {
 
-    document.getElementById('data').innerHTML= 'hi'
+    console.log(`Value of x is ${x}`)
 }
+catch(error) {
+    console.log(error.message, ", Error")
+}
+

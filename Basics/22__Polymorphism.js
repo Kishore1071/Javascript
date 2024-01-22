@@ -2,17 +2,16 @@
 
 // A simple example are console.log, typeof
 
-
 // Example with class
 
 class Bird {
-    speak() {
+    sound() {
         console.log("Bird sings.");
     }
 }
 
-class Cat {
-    speak() {
+class Animals {
+    sound() {
         console.log("Cat meows.");
     }
 }
@@ -20,7 +19,7 @@ class Cat {
 const pets = [new Bird(), new Cat()];
 
 for (const pet of pets) {
-    pet.speak();
+    pet.sound();
 }
 
 
