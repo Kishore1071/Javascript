@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <!-- <h1>Frontend</h1>
@@ -56,73 +57,34 @@
         </tbody>
     </table> -->
 
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, debitis!</p>
 
-    <form>
+
+    <form autocomplete="on">
         <label for="username">Username</label>
-        <input type="text" name="username">
+        <input type="text" name="username" maxlength="10" minlength="5" placeholder="Enter your username" >
         <br>
 
-        <label for="user-password">Password</label>
-        <input type="password" name="user-password">
-        <br>
-
-        <label for="username">Username</label>
-        <input type="text" name="username">
+        <label  for="user-password">Password</label>
+        <input type="password" name="user-password" pattern="">
         <br>
 
         <label for="age">Age</label>
-        <input type="number" name="age">
+        <input type="number" name="age" min="50" max="100" step="5" value="55" autofocus>
         <br>
-
-        <label for="emailid">email Id</label>
-        <input type="email" name="emailid">
-        <br>
-
-        <label for="emailid">Month</label>
-        <input type="month" name="emailid">
-        <br>
-
-        <label for="emailid">Date</label>
-        <input type="date" name="emailid">
-        <br>
-
-        <label for="emailid">Time</label>
-        <input type="time" name="emailid">
-        <br>
-
-        <label for="emailid">Favorite Language</label>
-        <br>
-        <input type="checkbox" name="emailid" >
-        <label for="">HTML</label>
-        <br>
-        <input type="checkbox" name="emailid">
-        <label for="">CSS</label>
-        <br>
-
-        <label for="emailid">Favorite Language</label>
-        <br>
-        <input type="radio" name="emailid">
-        <label for="">HTML</label>
-        <br>
-        <input type="radio" name="emailid">
-        <label for="">CSS</label>
-        <br>
-
-        <label for="">Feedback</label>
-        <br>
-        <textarea name="" id="" cols="40" rows="10"></textarea>
-        <br>
-
-        <select name="" id="" multiple>
-            <option value="html">Html</option>
-            <option value="css">CSS</option>
-            <option value="javascript">Javascript</option>
-            <option value="javascript">Python</option>
-            <option value="javascript">PHP</option>
-            <option value="javascript">Java</option>
-        </select>
 
     </form>
+
+    <a href="https://www.adobe.com/" target="_blank">Go to Adobe site</a>
+    
+    <a href="mailto:kishore@gmail.com">Send Mail</a>
+
+    <button onclick="LogData()">Click</button>
+
+    <img src="image.jpg" alt="Image of building" width="500px" height="500px">
+
+    <video src="sea.mp4" controls autoplay muted width="500px" height="500px"></video>
+    <audio src="sea.mp4" controls autoplay muted></audio>
    
     <script src="script.js"></script>
 </body>
