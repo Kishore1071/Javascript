@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+}
+
+.position-sticky {
+    position: sticky;
+    top: 0;
+    background-color: antiquewhite;
+    height: 50px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    list-style-type: none;
+}
+
+.list-element {
+    position: relative;
+    top: 10px;
+    color: blueviolet;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.position-relative {
+    position: relative;
+    width: 20%;
+    height: 500px;
+    background-color: aquamarine;
+    top: 20px;
+    left: 40%;
+    z-index: -1;
+}
+
+.position-absolute {
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+
+.position-fixed {
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    background-color: red;
+    opacity: 1;
+}
+
+.dummy-para {
+    position: relative;
+    top: 30px;
+    z-index: -1;
+}
